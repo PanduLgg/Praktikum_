@@ -1,0 +1,26 @@
+.nav{
+    background-color: rgb(204, 147, 73); 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    border-bottom: 4px solid black;
+}
+
+.div{
+    margin-left: 3em;
+}
+
+.divt{
+    margin-left: 50em; 
+    margin-top: 5em; 
+    width: 50%;
+}
+
+.table{
+    background-color: antiquewhite;
+    background-clip: border-box;
+    width: 100%;
+}
+
+.footer{
+    background-color: rgb(204, 147, 73)
+}
