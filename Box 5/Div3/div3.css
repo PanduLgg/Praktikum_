@@ -1,0 +1,52 @@
+.head { 
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box1 {
+    width: 20%;
+    border: 1px black solid;
+    background-color: yellow;
+}
+
+.box2 {
+    width: 81%;
+    border: 1px black solid;
+    background-color:tomato;
+}
+
+nav {
+    width: 20%;
+    border: 1px solid black;
+    background-color: greenyellow;
+}
+
+main{
+    width: 60%;
+    border: 1px black solid;
+    background-color: grey;
+}
+
+aside {
+    width: 20%;
+    border: 1px black solid;
+    background-color: lightblue;
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    border: 1px black solid;
+    background-color: blue;
+}

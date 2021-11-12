@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 7em;
+}
+
+.box {
+    position: relative;
+    width: 13em;
+    height: 40em;
+    background-color: yellow;
+    border: 2px solid;
+    border-color: black;
+}
+
+.box2 {
+    position: relative;
+    width: 13em;
+    height: 40em;
+    background-color: orangered;
+    border: 2px solid;
+    border-color: black;
+}
+
+.box3 {
+    position: relative;
+    width: 13em;
+    height: 40em;
+    background-color: green;
+    border: 2px solid;
+    border-color: black;
+}
+
+.box4 {
+    position: relative;
+    width: 13em;
+    height: 40em;
+    background-color: lightseagreen;
+    border: 2px solid;
+    border-color: black;
+}
+
