@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    
+}
+
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.p-1 {
+    width: 440px;
+    height: 230px;
+}
+
+.p-1 img {
+    width: 440px;
+    height: 230px;
+}
+
+.row2 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.p-2 {
+    width: 260px;
+    height: 180px;
+}
+
+.p-2 img {
+    width: 260px;
+    height: 180px;
+}
+
+
+
