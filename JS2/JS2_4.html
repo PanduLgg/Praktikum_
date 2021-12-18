@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS2_4</title>
+</head>
+<body>
+  
+  <input  id="bilanganPertama" type="number"  onchange="cetakHasil()">
+  <br>
+  +
+  <br>
+  <input id="bilanganKedua" type="number"  onchange="cetakHasil()">
+  <br>
+  =
+  <br>
+  <input id="hasil" type="number">
+
+  <script>
+    function cetakHasil() {
+      let bilanganPertama = document.getElementById('bilanganPertama');
+
+    }
+    function cetakHasil() {
+    let bilanganPertama = document.getElementById('bilanganPertama');
+    let bilanganKedua = document.getElementById('bilanganKedua');
+    let hasil = document.getElementById('hasil');
+
+    hasil.value = Number(bilanganPertama.value) + Number(bilanganKedua.value)
+    }
+  </script>
+</body>
+</html>

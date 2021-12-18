@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2_3</title>
+</head>
+<body>
+    <p style="margin-left: 50px;">Jam Masuk
+        <span style="margin-left: 100px;">Jam Keluar</span>
+        <span style="margin-left: 130px;">Lama</span>
+        <span style="margin-left: 140px;">Biaya</span>
+    </p>
+
+
+    <input id="masuk" type="number" placeholder="Masukkan Jam Masuk" >
+    <input id="keluar" type="number" placeholder="Masukkan Jam Keluar" onchange="cetakHasil()">
+    <input id="lama" type="number">
+    <input id="biaya" type="number">
+
+    <script>
+        
+        function cetakHasil() {
+        var keluar = document.getElementById('keluar');
+        }
+
+        function cetakHasil() {
+        var masuk = document.getElementById('masuk');
+        var keluar = document.getElementById('keluar');
+        var lama = document.getElementById('lama');
+        var biaya = document.getElementById('biaya');
+        let harga = 3000; 
+
+        lama.value = Number(keluar.value) - Number(masuk.value)
+        
+        if (lama.value >= 2) {
+            biaya.value = harga;
+        }
+        }
+        
+
+      </script>
+
+</body>
+</html>
