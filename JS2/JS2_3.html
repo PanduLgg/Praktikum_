@@ -17,7 +17,7 @@
     <input id="masuk" type="number" placeholder="Masukkan Jam Masuk" >
     <input id="keluar" type="number" placeholder="Masukkan Jam Keluar" onchange="cetakHasil()">
     <input id="lama" type="number">
-    <input id="biaya" type="number">
+    <input id="biaya" type="number" onchange="cetakHasil()">
 
     <script>
         
@@ -30,12 +30,14 @@
         var keluar = document.getElementById('keluar');
         var lama = document.getElementById('lama');
         var biaya = document.getElementById('biaya');
-        let harga = 3000; 
 
         lama.value = Number(keluar.value) - Number(masuk.value)
         
-        if (lama.value >= 2) {
-            biaya.value = harga;
+        if (lama.value == 2) {
+            biaya.value = 3000;
+        }
+        else if (lama.value >= 2) {
+            biaya.value = Number(lama.value) * 1000 + 1000;
         }
         }
         
