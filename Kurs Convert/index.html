@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Kurs Converter</title>
+</head>
+<body>
+      <fieldset style="background-color: lightblue;">
+        <legend>Kurs Rupiah- Mata Uang Asing</legend>
+            <table style="border: 1px black solid; 
+            text-align: center;
+            width: 100%;
+            height: 100px; 
+            font-family: Cambria;
+            font-weight: bolder;
+            font-size: 20px;">
+                <tr style=" height: 50px;">
+                    <td style="border: 1px black solid;">
+                        <label>Masukkan Nilai
+                    </td>
+                    <td  style="border: 1px black solid;">
+                        <label>Valas
+                    </td>
+                    <td style="border: 1px black solid;">
+                        <label>Nilai Rupiah</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td  style="border: 1px black solid;">
+                        <input  oninput="hitung()" type="number" id="nilai" style="width: 95%; height: 27px;">
+                    </td>
+                    <td>
+                        <select onchange="kurs(); hitung()" id="valas" style="width: 90%; 
+                        height: 30px; 
+                        text-align: center;
+                        font-size: 15px;">
+                            <option value="Dollar" id="usd">
+                                Dollar US
+                            </option>
+                            <option value="Singapore" id="singapore">
+                                Dollar Singapore
+                            </option>
+                            <option value="Ringgit" id="ringgit">
+                                Ringgit Malaysia
+                            </option>
+                            <option value="Yen" id="yen">
+                                Yen Jepang
+                            </option>
+                            <option value="Euro" id="euro">
+                                Euro
+                            </option>
+                            <option value="Riyal" id="riyal">
+                                Riyal Arab Saudi
+                            </option>
+                        </select>
+                    </td>
+                    <td  style="border: 1px black solid;">
+                        <input type="number" id="rupiah" disabled="disabled" style="width: 95%; height: 27px;">
+                    </td>
+                </tr>
+            </table>
+      </fieldset>
+          
+      
+</body>
+</html>

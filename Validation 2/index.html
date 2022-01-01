@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script lang="JavaScript" src="scripts.js"></script>
+    <title>Validation 2</title>
+</head>
+<body>
+    <div style="display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 550px;
+    background-color: #62b0ff;
+    margin-left: 25%;
+    margin-top: 5%;
+    text-align: center;
+    align-items: center;
+    font-family: cambria;">
+        <h1 style="text-align: center;
+        margin-bottom: 50px;">Form Pemesanan Tiket</h1>
+
+        <div>
+        <label>Nama Anda </label><br><br>
+        <input type="text" required maxlength="30" placeholder="Masukkan Nama Anda" id="nama"
+        style="width: 250px;
+        height: 25px;
+        position: relative;
+        text-align: center;">
+        <font id="notname" style="color: red;"></font>
+        </div>
+
+        <div style="margin-top: 10px;">
+        <label>Email </label><br><br>
+        <input type="email" required placeholder="Masukkan Email Anda" id="mail" onblur="validateEmail(this);"
+        style="width: 250px;
+        height: 25px;
+        text-align: center;">
+        <font style="color: red;" id="notmail"></font>
+        </div>
+
+        <div style="margin-top: 10px;">
+        <label>Jam Keberangkatan</label><br><br>
+        <input type="time" name="appt" min="00:00" max="23:59" value="00:00" required id="jam"
+        style="width: 70px;
+        height: 25px;">
+        <font style="color: red;" id="notjam"></font>
+        </div>
+
+        <div style="margin-top: 10px;">
+        <label>Tujuan Keberangkatan </label><br><br>
+        <input type="text" required placeholder="Tujuan Anda" id="tujuan"
+        style="height: 25px;
+        width: 250px;
+        text-align: center;">
+        <font style="color: red;" id="nottempat"></font>
+        </div>
+
+        <div style="margin-top: 10px;">
+        <label>Jumlah Tiket</label><br><br>
+        <input type="number" min="1" max="10" value="0" required id="tiket"
+        style="width: 40px;
+        height: 25px;">
+        <font style="color: red;" id="nottiket"></font>
+        </div>
+
+        <div>
+        <button onclick="submit()"
+        style="
+        width: 80px;
+        height: 30px;
+        margin-top: 10px;">PESAN</button>
+        </div>
+        
+    </div>
+
+    <div style="
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 200px;
+    margin-top: 50px;
+    background-color: #00ec3c;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;">
+
+        <div id="hasil"
+        style="background-color: #fff;
+        border: 1px black dotted;
+        text-align: center;
+        padding: 10px;
+        width: 30%;
+        display: none;
+        "></div>
+    </div>
+</body>
+</html>

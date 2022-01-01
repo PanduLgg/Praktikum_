@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <script lang="JavaScript" src="otentikasi.js"></script>
+</head>
+<body
+style="font-family: Cambria;
+font-weight: bold;">
+    <div class="form" id="form" 
+    style="background-color: rgb(241, 72, 72);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    margin: 100px 0 0 30%;
+    color: white;">
+        <p style="font-size: 30px;">LOG IN</p>
+
+        <input type="text" id="username" placeholder="Enter Username"
+        style="width: 250px;
+        height: 25px;
+        margin-bottom: 10px;
+        border: 2px black solid;" 
+        required>
+
+        <input type="password" id="passwd" placeholder="Enter Password"
+        style="width: 250px;
+        height: 25px;
+        margin-bottom: 10px;
+        border: 2px black solid;" 
+        required>
+
+        <input type="button" value="LOG IN" id="login"
+        onclick="checkForm()"
+        style="width: 100px;
+        height: 30px;">
+    </div>
+</body>
+</html>
